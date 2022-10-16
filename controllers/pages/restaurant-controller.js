@@ -4,11 +4,11 @@ const {
   Comment,
   User,
   Favorite
-} = require('../models')
+} = require('../../models')
 const {
   getOffset,
   getPagination
-} = require('../helpers/pagination-helper')
+} = require('../../helpers/pagination-helper')
 const restController = {
   getRestaurants: (req, res, next) => {
     const DEFAULT_LIMIT = 9

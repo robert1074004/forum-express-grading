@@ -1,4 +1,4 @@
-const { Category } = require('../models')
+const { Category } = require('../../models')
 const categoryController = {
   getCategories: (req, res, next) => {
     return Promise.all([Category.findAll({ raw: true }), Category.findByPk(req.params.id, { raw: true })])
